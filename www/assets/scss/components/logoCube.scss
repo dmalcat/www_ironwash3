@@ -1,0 +1,73 @@
+@import '../config';
+
+.scene {
+	margin-top: 20px;
+	margin-left: 50px;
+	width: 100px;
+	height: 100px;
+	perspective: 800px;
+	.cube {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transform-style: preserve-3d;
+		transition: 2s;
+	}
+
+	.cube-face {
+		width: inherit;
+		height: inherit;
+		position: absolute;
+		transition: 2s;
+		border: 1px solid #444b61;
+		background-repeat: no-repeat;
+		background-color: black;
+		opacity: 1;
+		line-height: 200px;
+		color: #fff;
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 0;
+		font-weight: 800;
+		background-image: url("#{$image-path}/brand/logocube/logoiron-b-tr.png");
+		
+
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.rotating {
+		animation: rotate 10s infinite linear;
+	}
+
+	.front {
+		transform: translate3d(0, 0, 50px);
+		transition: 2s;
+	}
+
+	.back {
+		transform: rotateY(180deg) translate3d(0, 0, 50px);
+	}
+
+	.left {
+		transform: rotateY(-90deg) translate3d(0, 0, 50px);
+	}
+
+	.right {
+		transform: rotateY(90deg) translate3d(0, 0, 50px);
+	}
+
+	.top {
+		transform: rotateX(90deg) translate3d(0, 0, 50px);
+	}
+
+	.bottom {
+		transform: rotateX(-90deg) translate3d(0, 0, 50px);
+	}
+}
+
+@keyframes rotate {
+	0% { transform: rotateX(0deg) rotateY(0deg) }
+	100% { transform: rotateX(360deg) rotateY(360deg) }
+}
+

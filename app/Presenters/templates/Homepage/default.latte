@@ -1,0 +1,114 @@
+{block title}Úvodní stránka{/block}
+{block fullDesc}The Fresh Bang welcome page{/block}
+
+{block content}
+
+<section class="cover">
+	<div class="cover__visual">
+		<div class="cover__visual-inner">
+			<picture class="cover__image">
+				<source srcset="{$basePath}/www/assets/images/content/cover/cover_1920.jpg" media="(max-width: 1920px)" type="image/png">
+				<source srcset="{$basePath}/www/assets/images/content/cover/cover_2560.jpg" media="(max-width: 2560px)" type="image/png">
+				<img src="{$basePath}/www/assets/images/content/cover/cover_1920.jpg" alt="">
+			</picture>
+		</div>
+	</div>
+
+	<div class="cover__wrapper wrapper">
+		<img class="cover__logo" src="{$basePath}/www/assets/images/brand/logo.svg" alt="">
+
+		<h1>{_}Praní - sušení - žehlení{/_}</h1>
+		<p class="cover__copy">
+			{_}S námi to zvládnete{/_}. <br>
+		</p>
+
+		<div class="buttonRow">
+			<a href="#jak-to-funguje" class="button button--big button--blue">{_}Jak to funguje{/_}</a>
+		</div>
+	</div>
+</section>
+
+<section class="article" id="jak-to-funguje">
+	<div class="article__wrapper wrapper">
+		<h1 class="text-center">
+			{_}Máte penzion nebo apartmán? <br> Nechcete si s prádlem dělat starosti? <br> Nechte to na nás!{/_}
+		</h1>
+
+		<p class="article__perex">
+			{_}Nabízíme profesionální prádelenské <br> služby pro podnikatele i širokou veřejnost.{/_}
+		</p>
+
+		<div class="article__row article__row--process row">
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/laundry-detergent.png" alt="">
+				<span class="article__name">
+					{_}Nemusíte nosit nic dalšího, <br> pračky si samy dávkují <br> čistící prostředky{/_}
+				</span>
+			</div>
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/washing-machine.png" alt="">
+				<span class="article__name">
+					{_}Za necelou hodinu <br> máte vypráno{/_}
+				</span>
+			</div>
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/dryer.png" alt="">
+				<span class="article__name">
+					{_}K dispozici <br> profesionální sušičky{/_}
+				</span>
+			</div>
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/iron.png" alt="">
+				<span class="article__name">
+					{_}Nabízíme také žehlení{/_}
+				</span>
+			</div>
+		</div>
+
+		<div class="buttonRow">
+			<a n:href="Services:" class="button button--transparent">{_}Více informací{/_}</a>
+		</div>
+	</div>
+</section>
+
+<section class="pricelist" id="cenik">
+	<div class="pricelist__wrapper wrapper">
+		<h1>{_}Ceník{/_}</h1>
+
+		<div class="pricelist__table-in">
+			<table class="pricelist__table">
+				<tr>
+					<th colspan="2">{_}Praní{/_}</th>
+				</tr>
+				<tr>
+					<td>{_}Pračka na 10 kg prádla{/_}</td>
+					<td>{_}od 150 Kč{/_}</td>
+				</tr>
+				<tr>
+					<td>{_}Pračka na 15 kg prádla{/_}</td>
+					<td>{_}od 200 Kč{/_}</td>
+				</tr>
+			</table>
+
+			<table class="pricelist__table">
+				<tr>
+					<th colspan="2">{_}Sušení{/_}</th>
+				</tr>
+				<tr>
+					<td>{_}Sušička na 15 kg prádla{/_}</td>
+					<td>{_}od 120 Kč / 60 minut{/_}</td>
+				</tr>
+				<tr>
+					<td>{_}Sušicka na 25 kg prádla{/_}</td>
+					<td>{_}od 150 Kč / 60 minut{/_}</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="buttonRow">
+			<a href="#kontakt" class="button button--blue">{_}Kontaktujte nás{/_}</a>
+		</div>
+	</div>
+</section>
+
+{include '../includes/contact.latte'}

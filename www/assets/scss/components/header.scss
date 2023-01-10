@@ -1,0 +1,25 @@
+@import '../config';
+
+.header {
+	position: fixed;
+	width: 100%;
+	background-color: transparent;
+	z-index: 1010;
+	.header__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+
+.headerLogo {
+	margin-top: 50px;
+}
+
+.headerNavigation {
+	.navigation {
+		@media screen and (max-width: $hamburger-breakpoint) {
+			display: none;
+		}
+	}
+}

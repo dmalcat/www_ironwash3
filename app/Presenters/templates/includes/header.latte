@@ -1,0 +1,47 @@
+<header class="header">
+	<div class="header__wrapper">
+		<div class="headerLogo">
+			<div class="scene">
+				<div class="cube rotating">
+					<div class="cube-face front">a</div>   <div class="cube-face back">b</div>
+					<div class="cube-face left">Left</div> <div class="cube-face right">Right</div>
+					<div class="cube-face top">Top</div>   <div class="cube-face bottom">Bottom</div>
+				</div>
+			</div>
+		</div>
+		<div class="headerNavigation">
+			{include 'navigation.latte'}
+			
+			<ul class="navigation">
+				<li class="navigation__item navigation__item--hamburger" id="hamburger-trigger">
+					<span class="navigation__link">
+						<img class="navigation__icon" src="{$basePath}/www/assets/images/ui/hamburger.png" alt="">
+					</span>
+				</li>
+				<li class="navigation__item  navigation__item--location">
+					<a class="navigation__link" href="#kontakt">
+						<img class="navigation__icon" src="{$basePath}/www/assets/images/ui/location.png" alt="">
+					</a>
+				</li>
+				<li class="navigation__item navigation__item--mail">
+					<a class="navigation__link" href="mailto:pradelna@ironcube.cz">
+						<img class="navigation__icon" src="{$basePath}/www/assets/images/ui/mail.png" alt="">
+					</a>
+				</li>
+				<li class="navigation__item navigation__item--phone">
+					<a class="navigation__link" href="tel:+420777558500">
+						<img class="navigation__icon" src="{$basePath}/www/assets/images/ui/phone.png" alt="">
+					</a>
+				</li>
+				<li class="navigation__item navigation__item--lang">
+					<a n:href="this, region => 'cz'" class="navigation__link navigation__link--cz">
+						<img class="navigation__icon" src="{$basePath}/www/assets/images/ui/flags/cz.png" alt="">
+					</a>
+					<a n:href="this, region => 'en'" class="navigation__link navigation__link--cz">
+						<img class="navigation__icon" src="{$basePath}/www/assets/images/ui/flags/en.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>

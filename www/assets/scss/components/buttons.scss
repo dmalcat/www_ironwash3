@@ -1,0 +1,46 @@
+@import '../config';
+@import '../core/breakpoints';
+
+.buttonRow {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.button {
+	display: inline-flex;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+	line-height: 1;
+	border-radius: $button-radius;
+	cursor: pointer;
+	padding: 0.75rem 2.5rem;
+	font-weight: bold;
+	@extend .trans;
+	@include max940px {
+		display: block;
+	}
+}
+
+.button--big {
+	padding: 1rem 3rem;
+}
+
+.button--transparent {
+	background-color: transparent;
+	color: $blue;
+	border: 2px solid $blue;
+	&:hover {
+		background-color: #2B6E7A;	
+		color: $white;
+	}
+}
+
+.button--blue {
+	background-color: #2B6E7A;
+	color: $white;
+	&:hover {
+		background-color: darken(#2B6E7A, 10%);
+	}
+}

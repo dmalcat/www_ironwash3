@@ -1,0 +1,16 @@
+<nav class="menu" id="nav">
+	<ul class="menu__list">
+		<li n:class="menu__item, $presenter->isLinkCurrent('Homepage:default') ? menu__item--active">
+			<a class="menu__link" n:href="Homepage:">{_}Úvodní stránka{/_}</a>
+		</li>
+		<li n:class="menu__item">
+			<a class="menu__link" n:href="Services:">{_}Naše služby{/_}</a>
+		</li>
+		<li n:class="menu__item">
+			<a class="menu__link" href="#cenik">{_}Ceník{/_}</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="#kontakt">{_}Kontakt{/_}</a>
+		</li>
+	</ul>
+</nav>

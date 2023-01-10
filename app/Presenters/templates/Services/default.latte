@@ -1,0 +1,114 @@
+{block content}
+
+<section class="article">
+	<div class="article__wrapper wrapper">
+		<h1 n:block=title>{_}Naše služby{/_}</h1>
+		
+		<p class="article__perex">
+			{_}Nabízíme profesionální prádelenské <br> služby pro podnikatele i širokou veřejnost.{/_}
+		</p>
+
+		<div class="article__row article__row--process row">
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/laundry-detergent.png" alt="">
+				<span class="article__name">
+					{_}Nemusíte nosit nic dalšího, <br> pračky si samy dávkují <br> čistící prostředky{/_}
+				</span>
+			</div>
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/washing-machine.png" alt="">
+				<span class="article__name">
+					{_}Za necelou hodinu <br> máte vypráno{/_}
+				</span>
+			</div>
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/dryer.png" alt="">
+				<span class="article__name">
+					{_}K dispozici <br> profesionální sušičky{/_}
+				</span>
+			</div>
+			<div class="article__col">
+				<img class="article__icon" src="{$basePath}/www/assets/images/ui/icons/iron.png" alt="">
+				<span class="article__name">
+					{_}Nabízíme také žehlení{/_}
+				</span>
+			</div>
+		</div>
+		<div class="article__row row">
+			<div class="article__col article__col--copy">
+				<p>
+					{_}Naše profesionální velkoobjemové pračky značky PRIMUS vyperou Vaše prádlo za necelou hodinu a poskytnou mu nejlepší péči. Kromě prádla nemusíte nosit nic dalšího - naše pračky si samy automaticky dávkují profesionální prostředky. Máme k dispozici několik pracích programů, pro různé druhy prádla a pro jeho menší i větší znečištění. K dispozici jsou dvě větší pračky pro 15kg a jedna menší pro 10 kg. Platí obecné uživatelské pravidlo, pračky plníme zhruba ze 3/4, aby bylo prádlo dobře vyprané a nadýchané.{/_}
+				</p>
+
+				<p>
+					{_}Výhodou profesionálního praní je úspora času i peněz. Profesionální pračka vypere Vaše prádlo šetrněji a zároveň kvalitněji, než pračka domácí. Naše pračky jsou uživatelsky velice jednoduché, a tak se nemusíte bát, že je nebudete umět ovládat. A co kdyby nastal problém ? I na takové případy jsme připraveni a v případě problému, nebo dotazů je Vám k dispozici milá obsluha, která Vám ráda se vším poradí.{/_}
+				</p>
+			</div>
+			<div class="article__col article__col--image">
+				<img class="article__image" src="{$basePath}/www/assets/images/content/article/2.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="article__row row">
+			<div class="article__col article__col--image">
+				<img class="article__image" src="{$basePath}/www/assets/images/content/article/3.jpg" alt="">
+			</div>
+			<div class="article__col article__col--copy">
+				<p class="perex">
+					{_}Po vyprání jsou k dispozici profesionální sušičky též značky PRIMUS.{/_}
+				</p>
+
+				<p>
+					{_}Velkoobjemové sušičky pojmou až 25 kg prádla a za hodinku může být Vaše prádlo připraveno. Doba sušení se odvíjí od objemu a materiálu prádla.{/_}
+				</p>
+
+				<p>
+					{_}Výhodou sušení ve velkoobjemové sušičce je úspora času a objem, díky kterému nedochází k mačkání prádla. Po vysušení jej lze tedy poskládat a uložit do skříně. Chcete u nás vyprat mačkavé věci ? A rádi byste je měli vyžehlené ? I tuto službu Vám po předchozí domluvě můžeme zařídit. V naší residenci máme profesionální mandl k vyžehlení prádla všech rozměrů.{/_}
+				</p>
+			</div>
+		</div>
+
+		<div class="buttonRow">
+			<a href="#kontakt" class="button button--blue">{_}Kontaktujte nás{/_}</a>
+		</div>	
+
+	</div>
+</section>
+
+<section class="pricelist" id="cenik">
+	<div class="pricelist__wrapper wrapper">
+		<h1>{_}Ceník{/_}</h1>
+
+		<div class="pricelist__table-in">
+			<table class="pricelist__table">
+				<tr>
+					<th colspan="2">{_}Praní{/_}</th>
+				</tr>
+				<tr>
+					<td>{_}Pračka na 10 kg prádla{/_}</td>
+					<td>{_}od 150 Kč{/_}</td>
+				</tr>
+				<tr>
+					<td>{_}Pračka na 15 kg prádla{/_}</td>
+					<td>{_}od 200 Kč{/_}</td>
+				</tr>
+			</table>
+
+			<table class="pricelist__table">
+				<tr>
+					<th colspan="2">{_}Sušení{/_}</th>
+				</tr>
+				<tr>
+					<td>{_}Sušička na 15 kg prádla{/_}</td>
+					<td>{_}od 120 Kč / 60 minut{/_}</td>
+				</tr>
+				<tr>
+					<td>{_}Sušicka na 25 kg prádla{/_}</td>
+					<td>{_}od 150 Kč / 60 minut{/_}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</section>
+
+{include '../includes/contact.latte'}
