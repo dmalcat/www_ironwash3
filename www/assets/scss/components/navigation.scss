@@ -6,6 +6,11 @@
 	align-items: center;
 	background-color: $black;
 	padding-left: 0;
+	@include max640px {
+		width: 100%;
+		justify-content: space-between;
+	}
+	
 	.navigation__list {
 		display: flex;
 		justify-content: space-between;
@@ -52,9 +57,17 @@
 			width: 28px;
 		}
 	}
-	
+
 	.navigation__item--lang {
-		
+		.navigation__link {
+			display: block;
+			width: 100%;
+			margin: 0 0.25rem;
+		}
+
+		.navigation__icon {
+			height: 23px;
+		}
 	}
 
 	.navigation__link {

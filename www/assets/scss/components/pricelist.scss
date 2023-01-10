@@ -1,13 +1,18 @@
 .pricelist {
     background-color: #efefef;
-    padding: 6rem 0;
+    
     .pricelist__table-in {
         margin-bottom: 4rem;
+        @include max640px {
+            overflow: scroll;
+        }
     }
 
     .pricelist__table {
         width: 400px;
         margin: 0 auto 2rem;
+        
+
         &:last-child {
             margin-bottom: 0;
         }

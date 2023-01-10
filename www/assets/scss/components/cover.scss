@@ -33,26 +33,9 @@
 		position: absolute;
 		top: 40%; left: 50%;
 		transform: translate(-50%, -50%);
-	}
-
-	h1 {
-		font-size: $hero-font-size;
-		color: $white;
-		margin-bottom: 1rem;
-		text-align: center;
-		/*
-		@media screen and (max-width: 1270px) {
-			font-size: $hero-font-size - 0.5rem;
+		@media screen and (max-width: 1680px) {
+			top: 50%;
 		}
-
-		@media screen and (max-width: 830px) {
-			font-size: $hero-font-size - 1rem;
-		}
-
-		@include max375px {
-			font-size: $hero-font-size - 0.5rem;
-		}
-		*/
 	}
 
 	.cover__logo {
@@ -60,6 +43,14 @@
 		max-width: 225px;
 		width: 100%;
 		margin: 0 auto 3rem;
+		@media screen and (max-width: 1390px) {
+			max-width: 150px;
+			margin-bottom: 1rem;
+		}
+
+		@include max375px {
+			max-width: 100px;
+		}
 	}
 
 	.cover__copy {
@@ -67,11 +58,28 @@
 		margin-bottom: 3rem;
 		font-size: 24px;
 		color: $white;
+		@media screen and (max-width: 1390px) {
+			margin-bottom: 1.5rem;
+		}
+
+		@include max640px {
+			font-size: 18px;	
+		}
 	}
 
 	h1 {
 		font-size: 60px;
 		font-family: 'Great Vibes', cursive;
+		color: $white;
+		margin-bottom: 1rem;
+		@include max640px {
+			font-size: 45px;
+		}
+
+		@include max375px {
+			font-size: 37.5px;
+		}
+
 		&:after {
 			display: none;
 		}

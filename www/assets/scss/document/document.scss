@@ -1,8 +1,12 @@
 @import '../config';
+@import '../core/breakpoints';
 
 section {
 	//margin-bottom: $section-gutter;
 	padding: 6rem 0;
+	@include max640px {
+		padding: 3rem 0;
+	}
 }
 
 .wrapper {
@@ -15,4 +19,16 @@ section {
 
 table {
 	border-collapse: collapse;
+}
+
+.content {
+	@include max640px {
+		padding-top: 60px;
+	}
+}
+
+br {
+	@include max640px {
+		display: none;
+	}
 }

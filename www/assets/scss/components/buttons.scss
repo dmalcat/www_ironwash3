@@ -21,10 +21,18 @@
 	@include max940px {
 		display: block;
 	}
+
+	@include max480px {
+
+	}
 }
 
 .button--big {
 	padding: 1rem 3rem;
+	@include max480px {
+		padding: 0.75rem 2rem;
+		font-size: 14px;
+	}
 }
 
 .button--transparent {

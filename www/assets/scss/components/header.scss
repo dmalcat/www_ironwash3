@@ -14,12 +14,13 @@
 
 .headerLogo {
 	margin-top: 50px;
+	@include max640px {
+		display: none;
+	}
 }
 
 .headerNavigation {
-	.navigation {
-		@media screen and (max-width: $hamburger-breakpoint) {
-			display: none;
-		}
+	@include max640px {
+		width: 100%;
 	}
 }

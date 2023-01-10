@@ -3,6 +3,9 @@
     .contact__row {
         justify-content: center;
         gap: 100px;
+        @include max640px {
+            gap: 35px;    
+        }
     }
 
     .contact__col {
@@ -40,5 +43,8 @@
         font-size: 17px;
         text-align: center;
         margin-bottom: 80px;
+        @include max640px {
+            margin-bottom: 40px;    
+        }
     }
 }
